@@ -1,0 +1,118 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1f2235;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+/* Navigation */
+
+.navigation-link {
+  border: 2px solid transparent;
+  margin-left: 32px;
+  margin-right: 8px;
+}
+
+.navigation-link:hover {
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+}
+
+/* Main Container height*/
+.main-container {
+  height: 100vh;
+}
+
+/* Aligning items in main row */
+.main_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+  background-size: 100% 100%;
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+  font-size: 5rem;
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+  width: auto;
+  height: 100vh;
+  opacity: 0;
+}
+
+/* About Section */
+.about {
+  background: #313552;
+  border-radius: 0.5rem;
+}
+
+.card {
+  width: auto;
+  border-bottom: 8px solid #f5ba09;
+  margin: auto;
+}
+
+/* Social Media Section */
+#social-media {
+  background: #313552;
+}
+
+/* Add color to Social Media Links */
+.media_link {
+  padding: 1rem;
+  max-width: 15rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #f5ba09;
+  border-radius: 0.5rem;
+}
+
+.media_link a:hover {
+  text-decoration: none;
+}
+
+.profile-pic {
+  width: 100%;
+}
+
+h5, .card-body .fa-solid {
+  color: #f5ba09;
+}
+
+h6 a {
+  color: inherit;
+}
+
+.skill {
+  font-size: 28pt;
+  margin-right: 10px;
+}
+
+.hobby .fa-solid {
+  font-size: 26px;
+  margin-right: 8px;
+  color: black;
+}
+
+.progress-bar {
+  background-color: #f5ba09;
+  height: 100%;
+}
+
+.logo {
+  height: 40px;
+}
