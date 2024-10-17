@@ -60,10 +60,15 @@ body {
   border-radius: 0.5rem;
 }
 
+/* Projects */
 .card {
   width: auto;
   border-bottom: 8px solid #f5ba09;
   margin: auto;
+}
+
+.card-img-top {
+  height: 13rem;
 }
 
 /* Social Media Section */
@@ -89,7 +94,8 @@ body {
   width: 100%;
 }
 
-h5, .card-body .fa-solid {
+h5,
+.card-body .fa-solid {
   color: #f5ba09;
 }
 
