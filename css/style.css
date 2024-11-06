@@ -95,7 +95,8 @@ body {
 }
 
 h5,
-.card-body .fa-solid {
+.card-body .fa-solid,
+.yellow {
   color: #f5ba09;
 }
 
