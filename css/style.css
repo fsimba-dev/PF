@@ -96,7 +96,8 @@ body {
 
 h5,
 .card-body .fa-solid,
-.yellow {
+.yellow,
+li::marker {
   color: #f5ba09;
 }
 

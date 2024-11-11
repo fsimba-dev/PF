@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./images/svg/code-solid.svg" />
+    <link rel="icon" type="image/x-icon" href="images/svg/code-solid.svg" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -12,6 +12,9 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -40,12 +43,13 @@
 
     <!-- Google Fonts -->
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
     />
 
-    <title>Portfolio</title>
+    <title>Resume</title>
   </head>
+
   <body>
     <!-- Header Section -->
     <header class="header">
@@ -71,202 +75,328 @@
           </button>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <a href="#about" class="text-white navigation-link">About</a>
-            <a href="#projects" class="text-white navigation-link">Projects</a>
-            <a href="#social-media" class="text-white navigation-link">Social Media</a>
-            <a href="./resume.html" target="_blank" class="text-white navigation-link">Resume</a>
+            <a href="./portfolio.html#about-me" class="text-white navigation-link">About Me</a>
+            <a href="./portfolio.html#projects" class="text-white navigation-link">Projects</a>
+            <a href="./portfolio.html#social-media" class="text-white navigation-link">Social Media </a>
+
+            <li class="dropdown show">
+              <a class="text-white navigation-link" data-toggle="dropdown" href="#" aria-expanded="false"> Download CV </a>
+              <div class="dropdown-menu hide">
+                <a class="dropdown-item" href="./files/CV Florian SIMBA en.pdf" target="_blank">
+                  <span><img width="20px" src="./images/english.ico" /></span>
+                  English version
+                </a>
+                <a class="dropdown-item" href="./files/CV Florian SIMBA fr.pdf" target="_blank">
+                  <span><img width="20px" src="./images/french.ico" /></span>
+                  French version
+                </a>
+              </div>
+            </li>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Main Container -->
-    <div class="main-container container">
-      <div class="row main_row">
-        <div class="col-6">
-          <h2 class="text-white">Hello, I'm</h2>
-          <h1 class="text-warning m-heading">Florian Simba</h1>
-          <h2 class="text-white">Sofware Developer</h2>
-        </div>
-        <div class="col-6">
-          <img src="https://via.placeholder.com/554x1350.png/373c5e/FFFFFF" class="img-fluid" />
-        </div>
-      </div>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="container about p-5">
-      <h1 class="text-warning">About Me</h1>
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="./images/svg/about_img.svg" class="img-fluid" />
-        </div>
-        <div class="col-lg-6 pl-5 pt-5 pb-5 text-white">
-          <h1 class="m-heading">A little bit about me</h1>
-          <p>
-            Passionate and versatile Full Stack Developer, I have gained solid experience in web and mobile development. With a strong interest in the aerospace,
-            automotive, and industrial sectors, I am eager to apply my technical skills to innovative and challenging projects.
-          </p>
-
-          <p>
-            Autonomous and detail-oriented, I enjoy tackling complex challenges with a methodical, performance-driven approach. My teamwork skills allow me to
-            collaborate effectively with various stakeholders to achieve common goals. Always striving to learn and grow, I am fully committed to ensuring the
-            success of every project I take on.
-          </p>
-
-          <p>
-            Throughout my career, I have developed strong adaptability and a proven ability to manage projects from start to finish, with a constant focus on detail
-            and excellence.
-          </p>
-          <a href="./resume.html" target="_blank"><button class="btn btn-outline-warning">Learn More</button></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects" class="container mt-5 pt-5">
-      <h1 class="text-warning mb-3 pb-2">My Personnal Projects</h1>
-      <div class="row">
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
+    <div class="container">
+      <div class="row my-2">
+        <div class="col-lg-4 col-md-4 col-12 mb-4">
+          <!-- Presentation -->
           <div class="card">
-            <img src="./images/svg/drone.svg" class="card-img-top" alt="chu-bordeaux" />
+            <img class="profile-pic" src="./images/profil.jpg" alt="" />
+            <h1 class="m-heading pt-2 m-0 text-center">Florian Simba</h1>
+            <hr />
 
             <div class="card-body">
-              <h5 class="card-title">Drone App</h5>
-              <p class="card-text">Connected watch application to experient human-drone and human-to-human interaction via a drone.</p>
-              <a href="https://github.com/fsimba-dev/Drones" target="_blank" class="btn btn-warning">See Project</a>
-            </div>
-          </div>
-        </div>
+              <h6><i class="fa-solid fa-briefcase mr-2 mb-2 mb-lg-3"></i> Software Engineer</h6>
+              <h6><i class="fa-solid fa-home mr-2 mb-2 mb-lg-3"></i> Bordeaux, FRANCE</h6>
+              <h6>
+                <i class="fa-solid fa-envelope mr-2 mb-2 mb-lg-3"></i>
+                <a href="mailto:florians@mailfence.com">florians@mailfence.com</a>
+              </h6>
+              <h6>
+                <i class="fa-solid fa-phone-alt mr-2 mb-2 mb-lg-3"></i>
+                <a href="tel:+33 6 05 79 70 48">+33 6 05 79 70 48</a>
+              </h6>
+              <h6><i class="fa-solid fa-car mr-3 mb-2 mb-lg-3"></i>Driving Licence B Category</h6>
+              <hr />
 
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
-          <div class="card">
-            <img src="./images/svg/weather app.svg" class="card-img-top" alt="weather app" />
+              <h2 class="mb-lg-4"><i class="fa-solid fa-asterisk mr-2"></i> Skills</h2>
 
-            <div class="card-body">
-              <h5 class="card-title">Weather Forecast App</h5>
-              <p class="card-text">Web application allowing to predict the weather for France which uses various APIs.</p>
-              <a href="https://fsimba-dev.github.io/DailyWeather/" target="_blank" class="btn btn-warning"> See Project </a>
-            </div>
-          </div>
-        </div>
+              <h5>Web Apllications</h5>
+              <div class="skills-list mb-2 mb-lg-4 ml-lg-2">
+                <span class="skill" data-toggle="tooltip" title="Angular"><i class="fa-brands fa-angular"></i></span>
+                <span class="skill" data-toggle="tooltip" title="Vue.JS"><i class="fa-brands fa-vuejs"></i></span>
+                <span class="skill" data-toggle="tooltip" title="Node.JS"><i class="mr-1 fa-brands fa-node-js"></i></span>
+                <span class="skill" data-toggle="tooltip" title="Bootstrap 4"><i class="bi bi-bootstrap-fill"></i></span>
+                <span class="skill ml-0" data-toggle="tooltip" title="MongoDB"><img class="mb-2" src="./images/svg/mongo.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Spring Boot"><img src="./images/svg/spring boot.svg" /></span>
+              </div>
 
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
-          <div class="card">
-            <img src="./images/svg/simulator.svg" class="card-img-top img-fluid" alt="y86 sim" />
-            <div class="card-body">
-              <h5 class="card-title">Y86 Web Simulator</h5>
-              <p class="card-text">Redesign of the y86 instruction set simulator as an educational tool for the University of Bordeaux.</p>
-              <a href="https://y86.emi.u-bordeaux.fr/" target="_blank" class="bouton btn btn-warning"> See Project </a>
-            </div>
-          </div>
-        </div>
+              <h5>Mobile Apps & Deployment Tools</h5>
+              <div class="skills-list mb-2 mb-lg-4 ml-2 ml-lg-3">
+                <span class="skill" data-toggle="tooltip" title="Android Studio"><img src="./images/svg/android.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Ionic"><img src="./images/svg/ionic.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Jenkins"><img src="./images/svg/jenkins.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Docker"><i class="fa-brands fa-docker"></i></span>
+              </div>
 
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
-          <div class="card">
-            <img src="./images/svg/jira.svg" class="card-img-top" alt="weather app" />
-            <div class="card-body">
-              <h5 class="card-title">Project Management tool</h5>
-              <p class="card-text">Web application for managing projects and organizing teamwork.</p>
-              <a href="https://github.com/cdp-g2-eq6/CdP-Release" target="_blank" class="btn btn-warning">See Project</a>
-            </div>
-          </div>
-        </div>
+              <h5>Collaborative tools</h5>
+              <div class="skills-list mb-2 mb-lg-4 ml-2 ml-lg-3">
+                <span class="skill" data-toggle="tooltip" title="Azure Devops"><img src="./images/svg/azure.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Jira & Confuence"><img src="./images/svg/atlassian_jira.svg" class="logo" /></span>
+                <span class="skill" data-toggle="tooltip" title="GitHub"><img src="./images/svg/github.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Figma"><img src="./images/svg/figma.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Adobe XD"><img src="./images/svg/Xd_Adobe_logo.svg" /></span>
+              </div>
 
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
-          <div class="card">
-            <img src="./images/svg/stayhealthy.svg" class="card-img-top" alt="chu-bordeaux" />
-            <div class="card-body">
-              <h5 class="card-title">Stay Healthy</h5>
-              <p class="card-text">Appointment management tool between Patients and Doctors.</p>
-              <a href="https://github.com/fsimba-dev/stayHealthy" target="_blank" class="btn btn-warning"> See Project </a>
-            </div>
-          </div>
-        </div>
+              <h5>Adobe Suite</h5>
+              <div class="skills-list mb-2 mb-lg-4 ml-2 ml-lg-3">
+                <span class="skill" data-toggle="tooltip" title="Adobe Photoshop"><img src="./images/svg/Photoshop_Adobe.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Adobe Illustrator"><img src="./images/svg/Illustrator_Adobe.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Adobe Lightroom"><img src="./images/svg/Lightroom_Adobe.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Adobe Premiere"><img src="./images/svg/Premier_Pro_Adobe.svg" /></span>
+                <span class="skill" data-toggle="tooltip" title="Adobe Audition"><img src="./images/svg/Audition_Adobe.svg" /></span>
+              </div>
+              <hr />
 
-        <div class="col-xl-4 col-md-6 mb-5 px-4">
-          <div class="card">
-            <img src="./images/svg/photo_edit.svg" class="card-img-top" alt="photo edit" />
-            <div class="card-body">
-              <h5 class="card-title">Photo Editor App</h5>
-              <p class="card-text">Android application for processing images using algorithms written in RenderScript.</p>
-              <a href="https://github.com/fsimba-dev/Image-Processing" target="_blank" class="btn btn-warning"> See Project </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              <h2 class="mb-lg-4"><i class="fa-solid fa-ribbon"></i> Certifications</h2>
 
-    <!-- Social Media Section -->
-    <div id="social-media" class="container-fluid">
-      <div class="container text-white py-5">
-        <h4 class="text-warning">Social Media</h4>
-        <h1 class="m-heading">Let's be friends</h1>
-
-        <div class="row pt-5">
-          <div class="col-2-lg col-6-md media_link btn">
-            <a href="https://www.linkedin.com/in/florian-simba-81b6b8150/" target="_blank">
-              <div class="row">
-                <div class="col-8 d-flex justify-content-start">
-                  <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                  <i class="fa-brands fa-linkedin-in fa-2x text-secondary"></i>
+              <div class="row ml-2 mb-2">
+                <div class="col-2 p-0 m-auto"><img src="images/az-900.png" alt="AZ-900" style="height: 40px" /></div>
+                <div class="col p-0">
+                  Microsoft Azure Fundamental <br />
+                  (<a href="https://www.credly.com/badges/e6d2ce08-85c9-48a8-8615-f06398c7bb57/" target="_blank">AZ-900</a>)
                 </div>
               </div>
-            </a>
-          </div>
 
-          <div class="col-2-lg col-6-md media_link btn">
-            <a href="https://github.com/fsimba-dev/" target="_blank">
-              <div class="row">
-                <div class="col-8 d-flex justify-content-start">
-                  <h3 class="m-0 pt-2 text-white">Github</h3>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                  <i class="fa-brands fa-github fa-2x text-secondary"></i>
+              <div class="row ml-2 mb-2">
+                <div class="col-2 p-0 m-auto"><img src="images/Logo_EF.png" alt="EF-SET" style="width: 40px" /></div>
+                <div class="col p-0">
+                  English Certification - EF SET <br />
+                  (<a
+                    href="https://links.t-educationfirst.mkt4686.com/servlet/MailView?ms=NTY0Mzg4NTES1&r=LTgxNTIyMzM5NzcS1&j=MjE4MzUyNDE1MAS2&mt=1&rt=0"
+                    target="_blank"
+                    >B2 Upper Intermediate</a
+                  >)
                 </div>
               </div>
-            </a>
-          </div>
 
-          <div class="col-2-lg col-6-md media_link btn">
-            <a href="https://www.instagram.com/tkingflorian" target="_blank">
-              <div class="row">
-                <div class="col-8 d-flex justify-content-start">
-                  <h3 class="m-0 pt-2 text-white">Instagram</h3>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                  <i class="fa-brands fa-instagram fa-2x text-secondary"></i>
+              <div class="row ml-2 mb-2">
+                <div class="col-2 p-0 m-auto"><i class="fa-solid fa-certificate fa-2xl"></i></div>
+                <div class="col p-0">
+                  Green IT - Software Engineer <br />
+                  (<a href="./files/Green IT - Software Engineer Certif. Florian SIMBA.pdf" target="_blank"> Capgemini University Certificate </a>)
                 </div>
               </div>
-            </a>
-          </div>
 
-          <div class="col-2-lg col-6-md media_link btn">
-            <a href="./" target="_blank">
-              <div class="row">
-                <div class="col-8 d-flex justify-content-start">
-                  <h3 class="m-0 pt-2 text-white">Mixcloud</h3>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                  <i class="fa-brands fa-mixcloud fa-2x text-secondary"></i>
+              <div class="row ml-2 mb-2">
+                <div class="col-2 p-0 m-auto"><i class="fa-solid fa-certificate fa-2xl"></i></div>
+                <div class="col p-0">
+                  Cybersecurity Assessment <br />
+                  (<a href="./files/Cybersecurity Assessment Certif. Florian SIMBA.pdf" target="_blank"> Capgemini University Certificate </a>)
                 </div>
               </div>
-            </a>
-          </div>
 
-          <div class="col-2-lg col-6-md media_link bg-warning btn">
-            <a href="mailto:florians@mailfence.com">
-              <div class="row">
-                <div class="col-8 d-flex justify-content-start">
-                  <h3 class="m-0 pt-2 text-dark">Email</h3>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                  <i class="fa-solid fa-envelope fa-2x text-secondary"></i>
+              <div class="row ml-2 mb-2">
+                <div class="col-2 p-0 m-auto"><i class="fa-solid fa-certificate fa-2xl"></i></div>
+                <div class="col p-0">
+                  Aerospace & Defense Industry <br />
+                  (<a href="./files/Aerospace & Defense Industry Certif. Florian SIMBA.pdf" target="_blank"> Capgemini University Certificate </a>)
                 </div>
               </div>
-            </a>
+              <hr />
+
+              <h2 class="mb-lg-4"><i class="fa-solid fa-language"></i> Languages</h2>
+
+              <h6>English</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar pt-1" style="width: 75%">75%</div>
+              </div>
+
+              <h6>French</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar pt-1" style="width: 95%">95%</div>
+              </div>
+              <hr />
+
+              <h2 class="mb-lg-4"><i class="fa-solid fa-smile-beam mr-2"></i> Hobbies</h2>
+
+              <div class="hobbies-list mb-2">
+                <span class="hobby"><i class="fa-solid fa-gamepad"></i></span>
+                <span class="hobby"><i class="fa-solid fa-swimmer"></i></span>
+                <span class="hobby"><i class="fa-solid fa-camera-retro"></i></span>
+                <span class="hobby"><i class="fa-solid fa-music"></i></span>
+                <span class="hobby"><i class="fa-solid fa-plane-departure"></i></span>
+                <span class="hobby"><i class="fa-solid fa-biking"></i></span>
+                <span class="hobby"><i class="fa-solid fa-bowling-ball"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-12">
+          <!-- Education -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2><i class="bi bi-mortarboard-fill yellow mr-3"></i>Education</h2>
+              <hr />
+
+              <h4 class="mt-3">Master's Degree</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Sept 2019 - Sep 2021</h6>
+              <p>The University of Bordeaux : Software Engineering</p>
+
+              <h4 class="mt-3">Bachelor's Degree</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Sept 2016 - May 2019</h6>
+              <p>The University of Bordeaux : Computer Science</p>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="card">
+            <div class="card-body">
+              <h2><i class="fa-solid fa-suitcase mr-3"></i>Work Experience</h2>
+              <hr />
+
+              <h4>Web Developper at Capgemini (France - ANEF)</h4>
+              <h6>
+                <i class="fa-solid fa-calendar ml-3 pr-2"></i> Oct 2024 -
+                <button class="btn btn-warning px-3 py-0">Current</button>
+              </h6>
+              <p>
+                Adding accessibility features to a set of government web applications based on the RGAA standard and maintaining the applications in operational
+                condition.
+              </p>
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Angular</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Python</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Flask</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Mongo DB</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Docker</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Protractor</button>
+              </div>
+
+              <h4>Web Developper at Capgemini (Worldwide - CNHi / IVECO)</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Nov 2021 - Oct 2024 (2 years and 11 Months)</h6>
+              <p>Web Application for the management of vehicle fleets (trucks or tractors) by CNHi or IVECO group dealers</p>
+              <ul>
+                <li>Migration of the application from Angualr Js to Angular 11.</li>
+                <li>Design of a new user interface, Implementation of new features and development of the mobile application.</li>
+                <li>Deployment of the different applications on the Test and Production servers.</li>
+                <li>Implementation of unit tests</li>
+              </ul>
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Angular</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Ionic</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Spring Boot</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Oracle DB</button>
+              </div>
+
+              <h4>Internship as web Developper at 4SH (France - IZIVIA)</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Apr 2021 - Aug 2021 (5 months)</h6>
+              <p>Redesign the user interface of a web application for a major player in electric vehicle charging in France.</p>
+              <ul>
+                <li>Implementation of a new interface with more filters to facilitate the visualization of price grids</li>
+                <li>Implementation of a simulator for calculating the charging price using different personalized or existing price grids.</li>
+                <li>Implementation of unit tests</li>
+              </ul>
+
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Angular JS</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Spring Boot</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">JUnit 5</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">MongoDB</button>
+              </div>
+
+              <h4>Smartwatch Application</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Feb 2021 - Mar 2021 (1 month)</h6>
+              <p>
+                Smartwatch application to experience human-to-human interaction using a drone connected to multiple watches. A server is attached to the drone to
+                serve as a network in environments that are deprived of it.
+              </p>
+              <ul>
+                <li>Implementation of the Python server used to connect the drone and the smartwatchs.</li>
+                <li>Design the smartwatch application and the scripts used to connect and command the drone.</li>
+                <li>Implementation of unit tests</li>
+              </ul>
+
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Android</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Java</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Python</button>
+              </div>
+
+              <h4>Stay Healthy</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Nov 2021 - Jan 2021 (3 months)</h6>
+              <p>Appointment management tool between Patients and Doctors.</p>
+              <ul>
+                <li>Design of the application UI and API schema/specs before Implementation using swagger</li>
+                <li>Implementation of the appointment and user management system.</li>
+                <li>Implementation of the node server.</li>
+                <li>Implementation of unit tests and E2E tests.</li>
+              </ul>
+
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Angular</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">NodeJS</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">MongoDB</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Docker</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Protractor</button>
+              </div>
+
+              <h4>Project Management tool</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Oct 2020 - Dec 2020 (3 months)</h6>
+              <p>Web application for managing projects and organizing teamwork. Tasks and sprints management as well as Jira or Azure Devops tools.</p>
+              <ul>
+                <li>Design of the application UI and API schema/specs before Implementation using swagger</li>
+                <li>Implementation of the sprints and tickets management system.</li>
+                <li>Implementation of the node server and Set up Docker to facilitate the deployments.</li>
+                <li>Implementation of unit tests.</li>
+              </ul>
+
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Angular</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">NodeJS</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">MongoDB</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Docker</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Selenium</button>
+              </div>
+
+              <h4>Y86 Web Simulator</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Feb 2020 - Apr 2020 (3 months)</h6>
+              <p>
+                Redesign of the Y86 instruction set simulator as an educational tool for the University of Bordeaux to facilitate its use by students on different
+                support (PC or tablet) or operating system (Mac, Windows or Linux).
+              </p>
+              <ul>
+                <li>Design of the application UI before Implementation</li>
+                <li>Implementation of the Y86 instruction set system.</li>
+                <li>Implementation of the user IDE to insert or type the code.</li>
+                <li>Set up Docker to facilitate deployments.</li>
+                <li>Implementation of unit tests</li>
+              </ul>
+
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">VueJs</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">TypeScript</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Docker</button>
+              </div>
+
+              <h4>Photo Editor Mobile Application</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Oct 2017 - May 2018 (8 months)</h6>
+              <p>
+                Android application for processing images using algorithms written in Renderscript to optimise the complex operations made by the phone processors
+                (CPU).
+              </p>
+              <div class="mb-4 ml-2">
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Android</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">Java</button>
+                <button class="btn btn-outline-warning mx-1 mb-1 py-0">RenderScript</button>
+              </div>
+
+              <h4>Computer Science Tutor</h4>
+              <h6><i class="fa-solid fa-calendar ml-3 pr-2"></i> Sep 2019 - Dec 2020 (1 year and 3 months)</h6>
+              <p>Support and follow-up of students in computer science difficulties at Bordeaux University</p>
+            </div>
           </div>
         </div>
       </div>
@@ -277,7 +407,7 @@
       <div class="container text-muted text-center py-3 mt-5">
         <h5>
           Copyright &copy; 2024 |
-          <a class="text-warning text-decoration-none" href="#about">Florian Simba</a>
+          <a class="text-warning text-decoration-none" href="./portfolio.html#about-me">Florian Simba</a>
         </h5>
       </div>
     </footer>
